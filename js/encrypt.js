@@ -2,7 +2,7 @@
  * Cifrado cesar
 	Funcion que cifra mensaje según el algoritmo del cifrado cesar
 */
-window.onload = function() {
+window.onload = () => {
   $('.modal').modal();
   let btncipher = document.getElementById('cipher');
   let phrase = document.getElementById('input_phrase').value;
