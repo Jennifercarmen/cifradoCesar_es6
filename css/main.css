@@ -1,0 +1,113 @@
+/* Clases Especificas */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Helpers */
+
+.header {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+.textuppercase {
+  text-transform: uppercase;
+}
+
+.btn,
+.btn-large {
+  background-color: #ea0b8c;
+  font-weight: bold;
+  width: 200px;
+}
+
+#encrypt {
+  font-weight: bold;
+}
+
+.center {
+  margin: 0 auto;
+  display: flex;
+}
+
+.back {
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+.larg {
+  position: absolute;
+  top: -20px;
+  left: 90px;
+  color: white;
+}
+
+
+/* index */
+
+.opacity {
+  height: 100vh;
+  background-color: rgba(46, 52, 53, 0.68);
+}
+
+.imgencrypt {
+  position: absolute;
+  top: 38vh;
+}
+
+.home {
+  background-image: url('../assets/images/background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center 93%;
+  background-size: cover;
+}
+
+.links {
+  position: absolute;
+  bottom: 25vh;
+}
+
+.links a {
+  border: 1px solid white;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.titleCipher {
+  color: #c6a65d;
+  font-size: 20px;
+  position: absolute;
+  top: 20vh;
+}
+
+
+/* Modal */
+
+.titlemodal {
+  font-weight: bold;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+.btn-modal {
+  background-color: #b95c5c;
+}

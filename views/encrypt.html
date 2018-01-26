@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/images/favicon.png">
+  <!-- material-icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../vendors/materialize/css/materialize.min.css" />
+  <!-- main.css-->
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <title>SingUp</title>
+</head>
+
+<body>
+  <div class="row ">
+    <div class="col s2 ">
+      <a href="../index.html">
+        <i class="material-icons prefix  back">keyboard_arrow_left</i>
+      </a>
+    </div>
+    <div class="col s10">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s2">
+    </div>
+    <div class="col s8 ">
+      <div class="center-align">
+        <h5 class="title header">Cifrado Cesar</h5>
+      </div>
+    </div>
+    <div class="col s2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <p class="center-align">Encriptar Frase</p>
+    </div>
+  </div>
+  <form>
+    <div class="row">
+      <div class="col s2">
+      </div>
+      <div class="input-field col s8">
+        <input id="input_phrase" type="text" class="validate">
+        <label for="input_phrase" data-error="Ingrese Solo letras">Ingrese Frase a Encriptar </label>
+      </div>
+      <div class="col s2">
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row ">
+      <div class="col s12">
+        <button type="button" class="modal-trigger btn btn-default center" class="btn modal-trigger center" id="cipher" data-target="myModal"
+          disabled>
+          <span class="center">Ver Resultado</span>
+        </button>
+      </div>
+    </div>
+  </form>
+  <!-- Modal  Encrypt-->
+  <!-- Modal Structure -->
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h5 class="titlemodal">Nueva Frase</h5>
+      <p>La frase se encripto a:
+        <span id="encrypt"></span>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="btn btn-modal modal-action modal-close waves-effect waves-green">Aceptar</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js//materialize.min.js"></script>
+  <script src="../js/encrypt.js"></script>
+
+</body>
+
+</html>

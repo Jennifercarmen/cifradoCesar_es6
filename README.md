@@ -1,56 +1,36 @@
-# Pseudocodigo encrypted-cesar
-Ingresar al menu de opciones
-* si el valor de la opcion es 1, ingresa a la funcion cipher
-* si el valor de la opcion es 2 ingresa a la funcion descipher
-* si el valor de la opcion es 3 sale del sistema
-* si el valor de la opcion es otra indica que no existe la opcion
-* function cipher()
-    * leer phrase
-    * si (phrase es vacio o contiene numeros) entonces
-        * leer frase
-    * si no
-      * escribir array de phrase
-      * escribir array vacio
-      * para (var i = 0; i < array.length; i++) hacer
-           * positionAscii = array[i].charCodeAt();
-           * positionEncryptedLetter = ((positionAscii - 65 + 33) % 26 + 65);
-           * encryptedLetter = String.fromCharCode(positionEncryptedLetter);
-          newArray.push(encryptedLetter);
-      * Fin para
-       * escribir texto encriptado
-* Fin Funcion
-
-* function descipher()
-
-  * leer phrase
-  * si (phrase es vacio o contiene numeros) entonces
-      * leer frase
-  * si no
-    * escribir array de phrase
-    * escribir array de phrase
-    * escribir array vacio
-    * para (var i = 0; i < array.length; i++) hacer
-          * var positionAscii = array[i].charCodeAt();
-          * var positionEncryptedLetter = (positionAscii - 13 - 33 % 26 + 65);
-          * var decrypt =String.fromCharCode(positionEncryptedLetter);
-          * newArray.push(decrypt);
-*  Fin para
-  * escribir texto desencriptado
-
-* Fin funcion
-* function menu(option)
-  * si opcion=1 entonces
-      * ejecutar cipher
-  * si no si opcion=2 entonces
-      * ejecutar descipher
-  * si no si opcion=3 entonces
-      * escribir hasta pronto
-  * si no entonces
-      * escribir no existe esa opcion
-* Fin funcion
-* Repetir
-     * strMenu = '1.Escriba 1 para cifrar una frase \n 2.Escriba 2 para descifrar una frase \n 3. Escriba 3 para salir';
-     * option = parseInt(prompt(strMenu));
-     * menu(option);
-* hasta que (option != 3 && typeof (option) === "number");
+# CIFRADO CÉSAR (ECMAScript 6)
+***
+## Objetivos
+- Se nos pide crear una  web que pida una frase al usuario y devuelva el mismo mensaje encriptado según el algoritmo de Cifrado César con el parámetro de desplazamiento de 33 espacios hacia la derecha
+- El programa es capaz de cifrar y descifrar tanto letras mayúsculas como minúsculas. 
+## Diagrama de flujo de la aplicación
 ![diagrama_flujo](assets/docs/diagrama_flujo.jpg)
+
+## Funcionalidad 
+- vista inicio para acceder a encriptar o desencriptar frase según lo requiera el usuario
+
+![diagrama_flujo](assets/docs/index.png)
+
+- Vista Encriptar , se considero  mostrar los resultados de la frase en una ventana modal.
+
+![diagrama_flujo](assets/docs/vista1.png)
+
+![diagrama_flujo](assets/docs/vista2.png)
+
+- Vista Desencriptar  se considero mostrar mensaje de alerta , en caso el campo sea vacio o contenga números
+
+![diagrama_flujo](assets/docs/vista3.png)
+
+![diagrama_flujo](assets/docs/vista4.png)
+
+## webSite
+* Puede ver el [Proyecto en vivo](https://jennifercarmen.github.io/cifradoCesar_es6/)
+
+## Desarrollado con:
+
+`Lenguaje estandar ECMAScript` `Javascript`  `Jquery` `CSS3` `Materialize` 
+
+***
+
+## Creditos
+* Carmen Sosa Jennifer
